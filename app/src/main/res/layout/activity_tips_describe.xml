@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".TipsDescribe">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="720dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_tips_desc"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="273dp"
+                android:layout_marginRight="273dp"
+                android:src="@drawable/symptoms_pic"
+                app:civ_border_color="@color/cardview_dark_background"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/title_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_tips_desc"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+
+                android:padding="5dp"
+                android:text="What are the symptoms?"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title_tips"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="27dp"
+                android:padding="12dp"
+
+                android:fontFamily="sans-serif"
+                android:text='Coronavirus diseases 2019 (COVID-19) is similar to a "flu". it is usally a mild or moderate  diseases, the most common symptoms are:fever cough or difficulty breathing.
+ Some patients may expireience tiredness,body aches,malaise in general,nasal congestion  runny nose, sore throat or chest pain. these symptoms are usually mild and begin gradually.
+ Some people are infected, but have no symptoms or have mild al\most imperceptible symptoms. Most people(about 80%)recover from the deseasee without needing special treatment. About 1  in 6 who fall ill with COVID-19 may have the savereform of the desease. Elderly people with certai\n chronic conditions, such as high blood pressure cardiovascular deseaseand daibetis,have a greater risk of devoloping the savere form. People with fever,cough and difficulty breathing should seek immediate medical attention.  A mask should be used as a way to prevent the dispersion of risparatory droplets when coughing sneezing or talking,combined with washing or hand hygine.after treatment medical guidelines  shoul be followed,avoid frequent public or work enviroments,seeking to remain at hoe until symptoms  disappear.this will prevent the spread of viruses and the occurrence of new infections. '
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
